@@ -5,59 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-    padding: 0;
+    body{
     margin: 0;
+    padding: 0;  
+    }
+.Top{
+    top: 0;
 }
-#header1 {
-    background-color: rgba(0, 0, 0, 0.15);
-    position: relative; 
-    height: 80px;
-    width: 100%;
-}
-#header1 a{
-    color: white;
-}
-#header1 a:hover{
-    text-decoration:underline;
-}
-#header1 li
-{
-    font-size: large;
-    display: inline;
-    margin-right : 4vw; /*viewport width larghezza della finestra*/
-}
-#header1 ul{
-    position: absolute;
-    top: 15px;
-    left: 15px;
-}
-#footer {
-    background-color: rgba(0, 0, 0, 0.25);
-    position:absolute;
+.Bottom{
     bottom: 0;
-    height: 60px;
+}
+.Right{
+    right: 0;
+}
+.Left{
+    left: 0;
+}
+.right li /*mette i sequenza i elementi*/
+{
+    float: right;
+}
+.left li
+{
+    float: left;
+}
+.horizontal
+{
+    width: 100%;
+    height: 4vw;
+}
+.vertical
+{
+    height: 100%;
+    width: 8vw;
+    top: 4vw;
+}
+.vertical a
+{
     width: 100%;
 }
-#footer a{
-    color: aliceblue;
-    position: absolute;
-    bottom: 15px;
-    left: 10px;
+#Bar{
+    margin: 0;
+    padding: 0;
+    list-style-type: none; /*toglie la fonte*/
+    overflow: auto;
+    position: fixed;
+    background-color: rgb(200, 200, 200);
+}
+
+#Bar a{
+    display: block; /*fa diventare tutto il blocco il link*/
+    padding: 1.3vw; /*grandezza blocco*/
+    text-decoration: none;
+    text-align: center;
+    color: black;
+}
+#FirstB{
+    color: white;
+    background-color: #4CAF50;
+
+}
+#Bar a:hover /*cambio colore*/
+{
+    background-color: rgb(50, 50, 50);
+    color: white;
 }
     </style>
 </head>
-<body style="background-color: rgb(134, 102, 139)">
-    <header id="header1">
-        <nav>
-            <ul>
-                <li><a>Main</a></li>
-                <li><a>News</a></li>
-            </ul>
-        </nav>
-    </header>
-    <header id="footer">
-        <a href="https://github.com/Qiu-Xiaqiang">Qiuxiaqiang</a>
-    </header>
+<body style="background-color: rgb(255, 255, 255)">
+    <ul id="Bar" class="Top left horizontal">
+        <li><a href="#home" id="FirstB">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <ul id="Bar" class="Left left vertical">
+        <li><a href="#home" id="FirstB">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    <ul id="Bar" class="Bottom right horizontal">
+        <li><a href="#home">About</a></li>
+    </ul>
 </body>
 </html>
