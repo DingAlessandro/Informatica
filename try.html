@@ -32,30 +32,34 @@
 .horizontal
 {
     width: 100%;
-    height: 4vw;
+    position: fixed;
+}
+.horizontal a
+{
+    width: 4vw;
 }
 .vertical
 {
     height: 100%;
-    width: 8vw;
-    top: 4vw;
+    width: 6.4vw;
+    position: fixed;
+    top: 3.1vw;
 }
 .vertical a
 {
-    width: 100%;
+    width: 4vw;
+    padding: 1vw;
 }
 #Bar{
     margin: 0;
     padding: 0;
     list-style-type: none; /*toglie la fonte*/
-    overflow: auto;
-    position: fixed;
+    overflow: hidden;
     background-color: rgb(200, 200, 200);
 }
-
 #Bar a{
     display: block; /*fa diventare tutto il blocco il link*/
-    padding: 1.3vw; /*grandezza blocco*/
+    padding: 1.2vw;
     text-decoration: none;
     text-align: center;
     color: black;
@@ -67,19 +71,19 @@
 }
 #Bar a:hover /*cambio colore*/
 {
-    background-color: rgb(50, 50, 50);
+    background-color: rgb(50, 50, 50); 
     color: white;
 }
     </style>
 </head>
 <body style="background-color: rgb(255, 255, 255)">
-    <ul id="Bar" class="Top left horizontal">
+    <ul id="Bar" class="Top left horizontal"> 
         <li><a href="#home" id="FirstB">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <ul id="Bar" class="Left left vertical">
-        <li><a href="#home" id="FirstB">Home</a></li>
+    <ul id="Bar" class="Left left vertical"> 
+        <li><a href="#home">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
