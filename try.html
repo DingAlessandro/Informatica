@@ -12,82 +12,77 @@
 .Top{
     top: 0;
 }
-.Bottom{
+.Bottom
+{
     bottom: 0;
 }
-.Right{
-    right: 0;
-}
-.Left{
-    left: 0;
-}
-.right li /*mette i sequenza i elementi*/
+
+#Bar
 {
-    float: right;
-}
-.left li
-{
-    float: left;
-}
-.horizontal
-{
-    width: 100%;
-    position: fixed;
-}
-.horizontal a
-{
-    width: 4vw;
-}
-.vertical
-{
-    height: 100%;
-    width: 6.4vw;
-    position: fixed;
-    top: 3.1vw;
-}
-.vertical a
-{
-    width: 4vw;
-    padding: 1vw;
-}
-#Bar{
     margin: 0;
     padding: 0;
     list-style-type: none; /*toglie la fonte*/
-    overflow: hidden;
+    display: flex;
     background-color: rgb(200, 200, 200);
 }
+
 #Bar a{
-    display: block; /*fa diventare tutto il blocco il link*/
-    padding: 1.2vw;
+    display: block; 
+    padding: 1.3vw; /*grandezza blocco*/
     text-decoration: none;
     text-align: center;
     color: black;
 }
+
 #FirstB{
     color: white;
     background-color: #4CAF50;
 
 }
+
 #Bar a:hover /*cambio colore*/
 {
-    background-color: rgb(50, 50, 50); 
+    background-color: rgb(50, 50, 50);
     color: white;
 }
-    </style>
+
+.grid-container 
+{
+    display: grid;
+    grid-template-columns: 80vw auto;
+    grid-template-rows: 50vh;
+    gap: 1px;
+    padding: 1px;
+    margin: 2px;
+}
+
+.grid-container .one 
+{
+        background-color: rgba(212, 99, 99, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+}
+      .grid-container #two 
+{
+        background-color: rgba(115, 239, 140, 0.8);
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+}
+</style>
 </head>
 <body style="background-color: rgb(255, 255, 255)">
-    <ul id="Bar" class="Top left horizontal"> 
+    <ul id="Bar" class="Top">
         <li><a href="#home" id="FirstB">Home</a></li>
         <li><a href="#news">News</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
-    <ul id="Bar" class="Left left vertical"> 
-        <li><a href="#home">Home</a></li>
-        <li><a href="#news">News</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-    <ul id="Bar" class="Bottom right horizontal">
+    <div class="grid-container">
+      <div class="one">1</div>
+      <div id="two">2</div>
+    </div>
+    <ul id="Bar" class="Bottom">
         <li><a href="#home">About</a></li>
     </ul>
 </body>
