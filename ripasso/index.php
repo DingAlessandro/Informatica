@@ -69,8 +69,8 @@
                     <option value="D">D</option>
                 </select>
                 <br><br>
+                <input class="submit" type="submit" value="submit">
             </form>
-            <input class="submit" value="submit">
         </div>
     </div>
 </body>

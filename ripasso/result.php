@@ -7,8 +7,6 @@ $q5 = $_POST["Q5"];
 $q6 = $_POST["Q6"];
 $q7 = $_POST["Q7"];
 $q8 = $_POST["Q8"];
-
-
 ?>
 <!doctype html>
 <html lang="en">
