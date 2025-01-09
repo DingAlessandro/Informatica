@@ -7,6 +7,8 @@ $q5 = $_POST["Q5"];
 $q6 = $_POST["Q6"];
 $q7 = $_POST["Q7"];
 $q8 = $_POST["Q8"];
+
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -26,7 +28,21 @@ $q8 = $_POST["Q8"];
 </div>
 <div class="container">
     <div class="box">
-
+        <h2 id="Q1"></h2>
+        <br><br>
+        <h2 id="Q2"></h2>
+        <br><br>
+        <h2 id="Q3"></h2>
+        <br><br>
+        <h2 id="Q4"></h2>
+        <br><br>
+        <h2 id="Q5"></h2>
+        <br><br>
+        <h2 id="Q6"></h2>
+        <br><br>
+        <h2 id="Q7"></h2>
+        <br><br>
+        <h2 id="Q8"></h2>
     </div>
 </div>
 </body>
