@@ -1,0 +1,2 @@
+[2025-02-03 19:43:45] PDO::__construct(): Argument #1 ($dsn) must be a valid data source name
+[2025-02-03 19:47:06] SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'dd' for key 'PRIMARY'
